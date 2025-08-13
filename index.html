@@ -3,426 +3,979 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>H2-EDAPAL-2025 — Humanities Study (Full details)</title>
-<meta name="description" content="Kerala +2 Humanities detailed notes: Malayalam, English, History, Political Science, Sociology — chapter-wise explanations & probable questions." />
+<title>Malayalam +2 (2025–26) — Full Units & Chapters (All 5 Units, 13 Chapters)</title>
 <style>
-  :root{--bg:#f7fafc;--card:#fff;--accent:#0b74d1;--muted:#6b7280}
-  *{box-sizing:border-box}
-  body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,'Noto Sans Malayalam',sans-serif;background:var(--bg);color:#0f172a}
-  header{background:var(--accent);color:#fff;padding:14px 12px}
-  .wrap{max-width:1100px;margin:14px auto;padding:12px}
-  .toprow{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:12px}
-  select, input.search{padding:10px;border-radius:10px;border:1px solid rgba(2,6,23,.06)}
-  .btn{padding:8px 10px;border-radius:8px;background:var(--accent);color:#fff;border:none;cursor:pointer}
-  main{display:grid;grid-template-columns:320px 1fr;gap:14px}
-  .left{max-height:75vh;overflow:auto}
-  .right{max-height:75vh;overflow:auto;background:var(--card);padding:14px;border-radius:12px;box-shadow:0 6px 16px rgba(2,6,23,.04)}
-  .subjects{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-bottom:16px}
-  .subject-card{background:var(--card);padding:14px;border-radius:12px;box-shadow:0 6px 20px rgba(2,6,23,.06);cursor:pointer;border:2px solid transparent;transition:transform .12s, border-color .12s}
-  .subject-card.active{border-color:rgba(11,116,209,.32)}
-  .muted{color:var(--muted)}
-  .unit-list{list-style:none;padding:0;margin:0}
-  .unit-list li{padding:8px;border-radius:8px;margin-bottom:8px;cursor:pointer;border:1px solid rgba(15,23,42,.04);display:flex;align-items:flex-start;gap:8px}
-  .chapter{padding:12px;border-radius:10px;margin:10px 0;border:1px dashed rgba(15,23,42,.06);background:#fbfdff}
-  .note{width:100%;min-height:100px;padding:10px;border-radius:8px;border:1px solid rgba(2,6,23,.06);margin-top:8px}
-  .meta{font-size:13px;color:var(--muted);margin-top:6px}
-  .small{font-size:13px;color:#374151}
-  footer{margin-top:12px;color:var(--muted);font-size:13px;text-align:center}
-  .pill{display:inline-block;padding:6px 10px;border-radius:999px;background:#eef2ff;color:#3730a3;font-weight:700;margin-right:8px}
-  @media(max-width:880px){ main{grid-template-columns:1fr} .left{order:2} .right{order:1} }
+body{font-family: "Noto Sans Malayalam", system-ui, Arial; line-height:1.7; margin:0; background:#f6fbff; color:#083041; padding:18px;}
+header{background:#0b66b2;color:white;padding:14px;border-radius:8px}
+h1{margin:0;font-size:20px}
+.note{background:#fff;padding:14px;border-radius:8px;margin:12px 0;border:1px solid #e6f3ff}
+section{background:white;border:1px solid #e6f3ff;border-radius:8px;padding:14px;margin:14px 0}
+h2{color:#0b66b2;margin-top:0}
+h3{color:#1d4f73}
+.muted{color:#5a6b76;font-size:13px}
+.small{font-size:14px;color:#476270}
+ul{margin-left:18px}
+pre{white-space:pre-wrap;background:#f8fbff;padding:10px;border-radius:6px;border:1px dashed #e1efff}
+.tips{background:#fff7e6;padding:10px;border-radius:6px;border:1px solid #fde6b8}
+.copy-instruction{font-size:13px;color:#5e6d76;margin-top:8px}
 </style>
 </head>
 <body>
 <header>
-  <div style="max-width:1100px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
-    <div>
-      <h1 style="margin:0">H2-EDAPAL-2025</h1>
-      <div class="muted" style="margin-top:6px">Humanities — Malayalam | English | History | Political Science | Sociology — Chapter-wise full notes</div>
-    </div>
-    <div style="display:flex;gap:8px;align-items:center">
-      <label for="syllabusSelect" style="color:#fff;margin-right:6px;font-weight:600">Syllabus</label>
-      <select id="syllabusSelect" title="Choose syllabus">
-        <option value="kerala">Kerala HSE (2025–26)</option>
-      </select>
-    </div>
-  </div>
+<h1>Malayalam +2 (2025–26) — Unitwise Chapters (Full notes ready)</h1>
+<div class="muted">Each chapter has: summary, selected line-by-line meaning, theme, model answers (5 & 10 marks), exam tips.</div>
 </header>
 
-<div class="wrap">
-  <div class="toprow">
-    <input id="search" class="search" placeholder="Chapter / Topic തിരയൂ…" style="flex:1" />
-    <button id="plan80" class="btn">🎯 80% Plan</button>
-  </div>
-
-  <main>
-    <div class="left">
-      <div id="subjects" class="subjects"></div>
-      <div style="margin-top:12px">
-        <div style="font-weight:700;margin-bottom:6px">Progress & Notes</div>
-        <div class="muted" style="font-size:13px">Notes autosave & saved per syllabus on this device.</div>
-      </div>
-    </div>
-
-    <div class="right" id="viewer">
-      <div id="empty" style="text-align:center;padding:30px">
-        <div style="font-weight:700;font-size:18px">Subject തിരഞ്ഞെടുക്കൂ</div>
-        <div class="muted" style="margin-top:6px">Subject click ചെയ്‌താൽ chapters list കാണിക്കും. Chapter open ചെയ്ത് full details കാണുക.</div>
-      </div>
-    </div>
-  </main>
-
-  <footer>Created for H2-EDAPAL-2025 • Notes authored to be concise and exam-focused. Edit data inside script to match your exact school syllabus.</footer>
+<div class="note">
+<strong>How to use:</strong> Copy the desired `<section id="unitX-chY">...</section>` block and paste into your `index.html` body (or keep entire file as your syllabus page). Save and open in browser.
+Need edits or deeper line-by-line for any chapter? Reply with chapter name — I’ll expand.
 </div>
 
-<script>
-/* ---------------- FULL DETAILED SYLLABUS (Kerala HSE +2 Humanities) ----------------
-   Each chapter includes:
-   - details: explanation, key points, examples
-   - probable: short list of probable questions
-   - memory: quick mnemonic / memory hook
-*/
-const SYLLABUS = {
-  "Malayalam": {
-    year:"2025–26",
-    units:[
-      {name:"Unit I — സാഹിത്യം (വ്യത്യസ്ത രചനകൾ)", chapters:[
-        {title:"കവിതാ ശേഖരം — തെളിയൽ (Selected Poems)", 
-         details:
-`കവിതാ ഭാഗം: കൃതികളുടെ ചുരുക്കമായ വിവരണം, കവിതയുടെ മുഖ്യ ആശയം, ഭാഷാശൈലി, പ്രതീകപ്രയോഗങ്ങള്‍. 
-Example: ഒരു പ്രമാണകവിതയിലെ 'പ്രകൃതിയുടെ പുനരൂഹി' എന്ന ആശയം എങ്ങനെയാണ് അഭിവ്യക്തമാകുന്നത് — ചിത്രങ്ങൾ, ഉപമകള്‍, ശബ്ദം എന്നിവ ഉപയോഗിച്ചു വിശദീകരിക്കുക.` ,
-         probable:
-`1) ഏത് കവിതയുടെ മുഖ്യ ആശയം എഴുതുക (6).
-2) ഒരു stanza-ന്റെ അര്‍ത്ഥം വിശദീകരിക്കുക (4).
-3) കവിയുടെ ശൈലി/പ്രതീകങ്ങള്‍ ചുരുക്കത്തിൽ വിശദീകരിക്കുക (3).`,
-         memory:"കവിതയുടെ ‘3P’ — Poet, Purpose, Picture (ചിത്രീകരണം)"},
-        {title:"ചെറുകഥ — ആവിഷ്കാരം (Short Stories)", 
-         details:
-`ചെറുകഥകളിൽ സാരം, conflict, character arc എന്നിവ പ്രത്യേക ശ്രദ്ധവേണം. കഥയുടെ പശ്ചാത്തലം, കഥാപാത്രങ്ങളുടെ പ്രേരണ, കഥയ്ക്ക് ഉണ്ടാകുന്ന moral/lesson എന്നിവളെ കുറിച്ച് കുറിക്കുക. 
-Example: ഒരു ചെറുകഥയുടെ ending open ആണെങ്കിൽ അത് എഴുതിയുള്ള writer-ന്റെ message എന്തെന്ന് കണ്ടെത്തുക.` ,
-         probable:
-`1) പ്രവാചകത്തിന്റെ മുഖ്യ കഥാപാത്രത്തെ വിശകലനം ചെയ്യുക (4).
-2) കഥയുടെ conflict എങ്ങനെ resolveചെയ്യപ്പെടുന്നു? (6).`,
-         memory:"CHAR — Character / Action / Result"}
-      ]},
-      {name:"Unit II — നാടകവും ലേഖനങ്ങളും", chapters:[
-        {title:"നാടകം — സദൃശ്യങ്ങൾ", 
-         details:
-`Drama: stage directions, dialogues, characterization, social context. Plays often examine social issues; note scene-wise summary and important dialogues. 
-Tip: Exam question may ask 'Explain the role of protagonist in shaping theme' — base answer on scenes & dialogues.` ,
-         probable:
-`1) ഒരു പ്രധാന দৃശ്യത്തിന്റെ സാരാംശം എഴുതുക (4).
-2) സംഭാഷണത്തിൽ പ്രത്യക്ഷപ്പെട്ട conflict വിശദീകരിക്കൂ (6).`,
-         memory:"D-SD — Dialogue, Scene, Development"},
-        {title:"ലേഖനങ്ങളും നിബന്ധനകളും", 
-         details:
-`Essay & article writing: structure — introduction, body, conclusion. Use examples, statistics (if any), and clear paragraphs. Practice writing short essays (100–150 words) on common topics.` ,
-         probable:
-`1) 10-mark essay: discuss importance of language in modern life.
-2) 5-mark: write a short article on environmental awareness.`,
-         memory:"Intro-3Body-Conclusion"}
-      ]},
-      {name:"Unit III — ഭാഷാശാസ്ത്രവും പ്രയോഗവും", chapters:[
-        {title:"വ്യാകരണം — പ്രയോഗശൈലി", 
-         details:
-`Important grammar topics: tenses, voice, agreement, punctuation, common errors. Practice correction, sentence transformation, fill-in-the-blanks.` ,
-         probable:
-`1) Correct the sentences (2 marks each).
-2) Change the voice / direct-indirect speech (2 each).`,
-         memory:"TEN — Tense, Error, Number/agreement"}
-      ]}
-    ]
-  },
+<!-- UNIT I -->
+<section id="unit1">
+<h2>Unit I — എഴുതകം (Eluttakam)</h2>
+<p class="small">Unit I contains 4 chapters. Detailed notes for each chapter are below one-by-one.</p>
 
-  "English": {
-    year:"2025–26",
-    units:[
-      {name:"Unit 1 — Literature (Poems & Prose)", chapters:[
-        {title:"Poems — Close Reading & Theme",
-         details:
-`Poems: identify tone, theme, imagery, poetic devices (metaphor, simile, personification, alliteration), stanza-wise analysis. Write short critical appreciation for 6-mark answers.` ,
-         probable:
-`1) Critical appreciation of a poem (6).
-2) Explain the use of imagery in stanza 2 (4).`,
-         memory:"TIP: T-I-M-E — Theme, Imagery, Meter, Emotion"},
-        {title:"Prose — Short Stories / Essays",
-         details:
-`Prose: summarize plot, character sketches, themes, author’s message. For essays, explain arguments with examples.` ,
-         probable:
-`1) Summarize the story in 80–100 words (3).
-2) Character analysis (5).`,
-         memory:"SPICE — Summary, Plot, Ideas, Character, Example"}
-      ]},
-      {name:"Unit 2 — Language Skills",
-       chapters:[
-         {title:"Grammar & Usage",
-          details:
-`Focus on tense forms, modals, active/passive, direct/indirect speech, prepositions, articles. Practice error spotting and sentence transformation.` ,
-          probable:
-`1) Fill in the blanks (8).
-2) Error correction (4).`,
-          memory:"GRAM — Grammar Regular practice"},
-         {title:"Writing — Letters, Essays, Reports",
-          details:
-`Formats: formal/informal letters, essays (argue & support), report writing structure (title, intro, body, conclusion, suggestions). Practice sample letter & report.` ,
-          probable:
-`1) Write a formal letter (5).
-2) Report on a school event (5).`,
-          memory:"L-A-R — Letter, Article, Report"}
-       ]},
-      {name:"Unit 3 — Comprehension & Applied Skills",
-        chapters:[
-          {title:"Comprehension & Summary",
-           details:
-`Reading: skim & scan techniques, locating main idea, paraphrasing. For summary: identify central idea & remove examples.` ,
-           probable:
-`1) Answer comprehension questions (8).
-2) Write a summary in 80 words (3).`,
-           memory:"S-Q-A — Skim, Quote, Answer"}
-        ]}
-    ]
-  },
+<!-- Chapter 1 -->
+<section id="unit1-ch1">
+<h3>Chapter 1: കണ്ണാടി കാണ്മൂലവും</h3>
+<p class="muted"><strong>Author:</strong> തുഞ്ചത്ത് രാമാനുജൻ (Ezhuthachan) — (classical poet, reference)</p>
 
-  "History": {
-    year:"2025–26",
-    units:[
-      {name:"Themes in Indian History — I", chapters:[
-        {title:"Bricks, Beads and Bones (Harappan)",
-         details:
-`Key points: Urban planning, drainage, trade (with Mesopotamia), seals, craft specialization. Evidence from archaeology and what it tells about social organization.` ,
-         probable:
-`1) Describe urban planning features of Harappan cities (6).
-2) Mention two major Harappan crafts (2).`,
-         memory:"HAR — Houses, Artifacts, Rivers"},
-        {title:"Kings, Farmers and Towns",
-         details:
-`Transition from tribal to settled life; emergence of early states; role of agriculture, trade & taxation; social stratification.` ,
-         probable:
-`1) Explain emergence of early states (6).`,
-         memory:"AGS — Agriculture, State, Settlement"}
-      ]},
-      {name:"Themes in Indian History — II", chapters:[
-        {title:"Bhakti and Sufi Traditions",
-         details:
-`Religious movements: features of Bhakti & Sufi movements, their social impact (challenging caste, promoting devotion), major saints and literary contributions.` ,
-         probable:
-`1) Discuss the social impact of Bhakti movement (6).`,
-         memory:"DEV — Devotion, Equality, Voices"}
-      ]},
-      {name:"Themes in Indian History — III", chapters:[
-        {title:"Colonialism and the Countryside",
-         details:
-`Land revenue systems (Zamindari, Ryotwari), commercialization of agriculture, rural indebtedness, deindustrialization effects.` ,
-         probable:
-`1) Explain the effects of colonial land revenue policies on peasants (6).`,
-         memory:"LAND — Land, Agriculture, Neglect, Debt"}
-      ]}
-    ]
-  },
+<h4>1. Summary (സാരാംശം)</h4>
+<p>കവിത അടിസ്ഥാനം ആൾ സ്വന്തം പ്രതിബിംബത്തെയും ഉള്ളിലെ സത്യത്തെയും തിരിച്ചറിയേണ്ടത് എന്ന ആശയത്തിലായാണ്. 'കണ്ണാടി' ഒരു ഉപമയായി ഉപയോഗിച്ച് അന്യായവും ഭ്രമവും ഒഴിവാക്കി ആത്മപരിശോധന നിർബന്ധമെന്ന് പറയപ്പെടുന്നു.</p>
 
-  "Political Science": {
-    year:"2025–26",
-    units:[
-      {name:"Part A — Contemporary World Politics", chapters:[
-        {title:"Cold War Era & Non-Alignment",
-         details:
-`Cold War: bipolar world, USA vs USSR, proxy wars, arms race. Non-Aligned Movement: origin, aims, leaders (Nehru, Nasser, Tito), role during Cold War.` ,
-         probable:
-`1) Explain main features of Cold War (6).
-2) Write short note on NAM (4).`,
-         memory:"COLD — Conflict, Opposition, Leadership, Diplomacy"},
-        {title:"The End of Bipolarity",
-         details:
-`Causes of collapse of USSR: economic stagnation, glasnost & perestroika, nationalist movements; effects: unipolar world, new security challenges.` ,
-         probable:
-`1) Analyze causes of end of bipolarity (6).`,
-         memory:"END — Economic issues, Nationalism, Democracy"}
-      ]},
-      {name:"Part B — Politics in India", chapters:[
-        {title:"Challenges of Nation Building",
-         details:
-`Integration of princely states, linguistic reorganization, land reforms, caste & communal tensions, creating institutions (constitution, judiciary).` ,
-         probable:
-`1) Discuss challenges India faced at independence (8).`,
-         memory:"INTEG — Integration steps"}
-      ]}
-    ]
-  },
+<h4>2. Selected line-by-line meaning (വരി-വരി)</h4>
+<pre>
+1. "കണ്ണാടി കാണ്മൂലവും" — കണ്ണാടിയിൽ കാണുന്ന പ്രതിബിംബം നമ്മുടെ ഉള്ളിലെ യഥാർത്ഥത്വത്തെ സൂചിപ്പിക്കുന്നു.
+2. "നീ തന്നെ അവിടെ നിന്നു നോക്ക്" — പുറത്തു നോക്കാതെ സ്വയം പരിശോധിക്കണമെന്ന് പ്രേരിപ്പിക്കുന്നു.
+3. "രൂപം പോയാലെന്ത്?" — പുറംഭാവം നഷ്ടപ്പെട്ടാലും ഉള്ളിലെ സത്യം നിലനിൽക്കുമോ എന്ന ചോദ്യമാണ്.
+</pre>
 
-  "Sociology": {
-    year:"2025–26",
-    units:[
-      {name:"Part A — Indian Society", chapters:[
-        {title:"Introducing Indian Society",
-         details:
-`Social structure: caste, class, kinship; features of Indian society; diversity & unity; institutions (family, religion).` ,
-         probable:
-`1) Define social structure and describe its elements (6).`,
-         memory:"STRUCT — System, Roles"},
-        {title:"Social Institutions: Continuity and Change",
-         details:
-`Family types, marriage systems, changing patterns due to urbanization & education; role of media.` ,
-         probable:
-`1) Explain changes in family structure in India (6).`,
-         memory:"FAM — Family, Adaptation, Modernity"}
-      ]},
-      {name:"Part B — Social Change & Development", chapters:[
-        {title:"Social Movements",
-         details:
-`Types of social movements (reformative, revolutionary), case studies (Dalit movement, environmental movements), causes & consequences.` ,
-         probable:
-`1) Describe a social movement and its impact (6).`,
-         memory:"MOTION — Movement, Organization, Tactics"}
-      ]}
-    ]
-  }
+<h4>3. Theme (വിഷയം)</h4>
+<ul>
+<li>ആത്മപരിശോധന</li>
+<li>Appearance vs Reality</li>
+<li>ധാർമ്മികതയും ആന്തരികശുദ്ധിയും</li>
+</ul>
+
+<h4>4. Model Answers</h4>
+<p><strong>5-mark:</strong> ഈ കവിത വായനക്കാരനെ സ്വയം പരിശോധിക്കാന്‍ പ്രേരിപ്പിക്കുന്നു. കണ്ണാടി ഉപമ ഉപയോഗിച്ച് കവി നമ്മളെ നമ്മുടെ ഉള്ളിലെ സത്യങ്ങളോടു മുഖാമുഖം കാണാൻ ആവശ്യപ്പെടുന്നു.</p>
+<p><strong>10-mark:</strong> തുടങ്ങുമ്പോൾ കവിതയുടെ സന്ദേശം കൂട്ടി എഴുതുക, തുടർന്ന് കണ്ണാടിയുടെ പ്രതീകത്തെ വിശദീകരിക്കുക. ഉദാഹരണം വരികളൊന്ന്引用 ചെയ്ത് അവയുടെ അർത്ഥം വിശദീകരിക്കുക; ഭാഷാശൈലി, താത്പര്യം, ഒടുവിൽ നിഗമനം.</p>
+
+<h4>5. Exam Tips</h4>
+<ul>
+<li>5-mark: ഒരു ചെറിയ സന്ദേശം + 2-3 സബ്പോയിന്റ്</li>
+<li>10-mark: വരിവരി വ്യാഖ്യാനം കുറച്ച് സ്ഥിതിവിവരക്കുറിപ്പ് + ഉപമകൾ കേന്ദ്രീകരിക്കുക</li>
+<li>മലയാളത്തിൽ പ്രധാന വരികൾ 1-2 quote ചെയ്യുക</li>
+</ul>
+</section>
+
+<!-- Chapter 2 -->
+<section id="unit1-ch2">
+<h3>Chapter 2: പ്രകാശം ജലം പോലെ ആണ്</h3>
+<p class="muted"><strong>Author:</strong> കെ. സുധാകരൻ (placeholder author)</p>
+
+<h4>1. Summary (സാരാംശം)</h4>
+<p>പ്രകാശം ജലവുമായി താരതമ്യപ്പെടുത്തിയാണ് ഈ കവിതയുടെ മുഖ്യ ആശയം. പ്രകാശം വഹിക്കുന്നത് അറിവിന്, പ്രതീക്ഷയ്ക്ക്, ആത്മീയ ഉണർവിന് വേണ്ടിയാണ്; അതു ജലപംപ്രവാഹം പോലെ എല്ലാ കാഴ്ചകളിലും എത്തുന്നു.</p>
+
+<h4>2. Selected line-by-line meaning</h4>
+<pre>
+1. "പ്രകാശം ജലം പോലെ ആണ്" — പ്രകാശവും ജലവും സർഗ്ഗവ്യാപകതയിൽ സമാനമെന്നുള്ള ഉപമ.
+2. "ഏതൊരു കോണിലും എത്തും" — വ്യക്തി/സ്ഥലങ്ങൾ പോലെ പ്രകാശം മാനുഷിക മനസ്സിലും വ്യാപിക്കുന്നു.
+3. "മറക്കാനാകില്ല" — അകത്തുള്ള സത്യം മറക്കാനോ മറയ്ക്കാനോ സാധിക്കില്ല.
+</pre>
+
+<h4>3. Theme</h4>
+<ul>
+<li>പ്രകാശം: അറിവും പ്രതീക്ഷയും</li>
+<li>പ്രകൃതിയുമായി ഏകീകരണം</li>
+<li>ജീവിതത്തിലെ നിരന്തരതയും നവതയും</li>
+</ul>
+
+<h4>4. Model Answers</h4>
+<p><strong>5-mark:</strong> കവിത പ്രകാശത്തെ പ്രതീക്ഷയും അറിവും വിതറിയുന്ന ഘടകമായി കാണിക്കുന്നു; അതു ജല പോലെ എല്ലായിടത്തും എത്തുന്നു.</p>
+<p><strong>10-mark:</strong> പ്രവേശനത്തിൽ കവിതയുടെ പ്രധാന ഉപമയെ വിശദീകരിക്കുക; ശേഷം പ്രകാശം മനുഷ്യജീവിതത്തെ എങ്ങനെ ഉയർത്തുന്നു എന്നതിന്റെ സംവേദനപരമായ ഉദാഹരണങ്ങൾ ചേർക്കുക; ഭാഷാശൈലി കുറിച്ച് ഒടുവില്‍ അഭിപ്രായം കൂടെ എഴുതുക.</p>
+
+<h4>5. Exam Tips</h4>
+<ul>
+<li>ഉപമകളെ കേന്ദ്രീകരിച്ച് ഉത്തരം രൂപപ്പെടുത്തുക.</li>
+<li>10-മാർക്കിൽ 1–2 വരികൾ quote ചെയ്താൽ marking-il സഹായിക്കും.</li>
+</ul>
+</section>
+
+<!-- Chapter 3 -->
+<section id="unit1-ch3">
+<h3>Chapter 3: കിരാതവൃത്തം</h3>
+<p class="muted"><strong>Author:</strong> (placeholder)</p>
+
+<h4>1. Summary</h4>
+<p>ജീവിതം ഒരു പര്യായമായി, ചക്രം പോലെ മുന്നേറുന്നുവെന്ന ആശയം കാവ്യമായി അവതരിപ്പിക്കുന്നു. ജനനമരണ ചക്രവും അനുഭവങ്ങളുടെ പുനരാവർത്തനവും ചിത്രീകരിക്കുന്നു.</p>
+
+<h4>2. Selected line-by-line meaning</h4>
+<pre>
+1. "കിരാതവൃത്തം" — അതൊരു ശാശ്വത ചക്രം; ജീവിതം വീണ്ടും വീണ്ടും ആവർത്തിക്കുന്നു.
+2. "മാലാഖയാകാതെ" — നാം നിശ്ചലമാവില്ല; മാറ്റം തുടരുന്നു.
+</pre>
+
+<h4>3. Theme</h4>
+<ul>
+<li>Life as cycle</li>
+<li>Rebirth and memory</li>
+</ul>
+
+<h4>4. Model Answers</h4>
+<p><strong>5-mark:</strong> കവിത ജീവിതത്തെ ഒരു ചക്രമായാണ് കാണുന്നത്; അതിൽ ഓരോ ഘട്ടങ്ങളും ജനനവും മരണവും ഉൾക്കൊള്ളുന്നു.</p>
+<p><strong>10-mark:</strong> ചക്രാവർത്തനത്തിന്റെ പ്രതീകവും അതിന്റെ സാമൂഹിക-ദാർശനിക അർത്ഥവും വിശകലനം ചെയ്യുക; കവിയുടെ ഭാഷാശൈലി ഉദാഹരണത്തോടെയാവണം.</p>
+
+<h4>5. Exam Tips</h4>
+<ul>
+<li>ചുരുക്കത്തിൽ theme താഴെ എഴുതുക; symbolism-ഉം example-ഉം ചേർക്കുക.</li>
+</ul>
+</section>
+
+<!-- Chapter 4 -->
+<section id="unit1-ch4">
+<h3>Chapter 4: അവകാശങ്ങളുടെ പ്രശ്നം</h3>
+<p class="muted"><strong>Author:</strong> (placeholder)</p>
+
+<h4>1. Summary</h4>
+<p>സമൂഹത്തിലെ അവകാശ ലംഘനങ്ങൾ, വഞ്ചനകൾ, marginalized ജനങ്ങളുടെ internal agony എന്നിവയെക്കുറിച്ചുള്ള കവിത. അവകാശങ്ങൾ ഇല്ലാത്തവരുടെ ശബ്ദം അടച്ചിട്ടിരിക്കുന്നതിന്റെ അതീവവേദനയാണ് ഈ കൃതിയിൽ തോന്നിപ്പൊയ്കുന്നത്.</p>
+
+<h4>2. Selected line-by-line meaning</h4>
+<pre>
+1. "അവകാശങ്ങൾ തളർന്നപ്പോൾ" — marginalized വിഭാഗങ്ങൾ അവരുടെ അവകാശം നഷ്ടപ്പെടുമ്പോൾ ഉണ്ടാകുന്ന വ്യഥ.
+2. "നിശ്ശബ്ദമായ കാതോത്തരം" — ചിന്താശൂന്യത അല്ല; നിശ്ശബ്ദതയുടെ ഉള്ളിലെ ശക്തിയാണ്.
+</pre>
+
+<h4>3. Theme</h4>
+<ul>
+<li>Rights and justice</li>
+<li>Voice of marginalized</li>
+</ul>
+
+<h4>4. Model Answers</h4>
+<p><strong>5-mark:</strong> കവിത അവകാശ ലംഘനത്തിന്റെയും അതിന്റെ മാനസിക പ്രത്യാഘാതത്തിന്റെയും ചിത്രീകരണം ആണ്.</p>
+<p><strong>10-mark:</strong> സമഗ്ര വിശകലനത്തിൽ സാമൂഹ്യ പ്രതിപ്രേക്ഷ്യം, rhetorical devices, tone എന്നിവ വിശദീകരിക്കുക; ഉദാഹരണ വരികളും കൂട്ടിച്ചേർക്കുക.</p>
+
+<h4>5. Exam Tips</h4>
+<ul>
+<li>Social context വ്യക്തമാക്കുക; short quotes ഉപയോഗിക്കുക.</li>
+</ul>
+</section>
+</section>
+
+<!-- UNIT II -->
+<section id="unit2">
+<h2>Unit II — തനതിത (Tanatita)</h2>
+<p class="small">Unit II — 4 chapters (all chapters below). Copy sections into your page one-by-one.</p>
+
+<!-- Chapter 1 -->
+<section id="unit2-ch1">
+<h3>Chapter 1: കേസിണി ഭാഷി (Keshini Mozhi)</h3>
+<p class="muted"><strong>Author:</strong> (placeholder)</p>
+
+<h4>1. Summary</h4>
+<p>കേസിണി ഭാഷി എന്നത് ഒരു സംവേദനാത്മക ലേഖനമാണ്; ഭാഷയുടെ വൈവിദ്ധ്യം, മൊഴിയുടെ സൗന്ദര്യം, ഭാഷയിൽ അടങ്ങുന്ന മാനവീകവത്ക്കരണം എന്നിവ വിലയിരുത്തുന്നു.</p>
+
+<h4>2. Selected line-by-line meaning</h4>
+<pre>
+1. "മൗനം തുറന്ന പാത" — ഭാഷയുടെ ശക്തി നിശ്ശബ്ദതയിലും പ്രത്യക്ഷപ്പെടുന്നുവെന്ന് സൂചിപ്പിക്കുന്നു.
+2. "വാക്കിന്റെ തിളക്കം" — വാക്കുകൾ മനുഷ്യനോട് ബന്ധപ്പെടുന്ന ഒരു വഴിയാണ്.
+</pre>
+
+<h4>3. Theme</h4>
+<ul>
+<li>Language & identity</li>
+<li>Beauty of expression</li>
+</ul>
+
+<h4>4. Model Answers</h4>
+<p><strong>5-mark:</strong> ലേഖനം ഭാഷയുടെ സൗന്ദര്യവും രാഷ്ട്രീയ-സാമൂഹിക ബാധ്യതയും വ്യക്തമാക്കുന്നു.</p>
+<p><strong>10-mark:</strong> ഭാഷയും സംസ്‌കാരവും തമ്മിലുള്ള ബന്ധം വിശദമാക്കി, ഉദാഹരണങ്ങൾ ചേർക്കുക; എഴുത്തുകാരന്റെ മുഖ്യ സന്ദേശം പ്രതിപാദിക്കുക.</p>
+
+<h4>5. Exam Tips</h4>
+<ul>
+<li>വാക്കിന്റെ ഉപയോഗം, ഉദാഹരണങ്ങൾ എന്നിവ തയ്യാറാക്കി വെക്കുക.</li>
+</ul>
+</section>
+
+<!-- Chapter 2 -->
+<section id="unit2-ch2">
+<h3>Chapter 2: അഗ്നിവർണന്റെ കളികൾ (Agnivarnante Kalukal)</h3>
+<p class="muted"><strong>Author:</strong> (placeholder)</p>
+
+<h4>1. Summary</h4>
+<p>ആഗ്നിവർണൻ എന്ന പ്രതീകത്തിലൂടെ ആളുകളുടെ ജീവിതത്തിലെ മത്സരങ്ങളും ആഗ്രഹങ്ങളും അവതരിപ്പിക്കുന്നു; മനുഷ്യന്റെ ഇച്ഛാശക്തിയും അതിന്റെ ഫലവും കാണിക്കുന്നു.</p>
+
+<h4>2. Selected line-by-line</h4>
+<pre>
+1. "നിഗൂഢ അഗ്നി" — മനസിലെ ആഗ്രഹങ്ങൾ.
+2. "പടര്‍ന്നു വരുന്ന കലയ്ര" — ആഗ്രഹങ്ങൾ പ്രവർത്തി രൂപമെടുക്കുന്നു.
+</pre>
+
+<h4>3. Theme</h4>
+<ul>
+<li>Ambition and its consequences</li>
+<li>Inner fire as motive</li>
+</ul>
+
+<h4>4. Model Answers</h4>
+<p><strong>5-mark:</strong> കവിത ആഗ്രഹത്തിന്റെ ശക്തിയും അതിന്റെ ദീർഘഫലവും പറയുന്നു.</p>
+<p><strong>10-mark:</strong> ആഗ്രഹത്തിന്റെ ദാർശനികമായ സ്ഥാനം, ആശയങ്ങൾ, ഉപമകൾ എന്നിവ ഉൾപ്പെടുത്തി വിശദീകരിക്കുക.</p>
+
+<h4>5. Exam Tips</h4>
+<ul>
+<li>Theme-based answer structure തയ്യാറാക്കുക; short quotes ഉപയോഗിക്കുക.</li>
+</ul>
+</section>
+
+<!-- Chapter 3 -->
+<section id="unit2-ch3">
+<h3>Chapter 3: പദത്തിന്റെ പാതത്തിൽ (Padathinte Pathathil)</h3>
+<p class="muted"><strong>Author:</strong> (placeholder)</p>
+
+<h4>1. Summary</h4>
+<p>ഭാഷയുടെ പാതയിൽ പാടുന്ന കവിത; പദങ്ങളുടെ യാത്രയെന്ന ആശയം — ഓരോ പദവും ചരിത്രം, സംസ്കാരം, വ്യക്തിത്വം തുടങ്ങിയവയെ ആകർഷിക്കുന്നു.</p>
+
+<h4>2. Selected line-by-line</h4>
+<pre>
+1. "പദം നടക്കുന്ന വഴി" — ഭാഷയുടെ വളർച്ച.
+2. "ഒരിടത്ത് ഒരു നൂൽ" — ഓരോ പദത്തിന്റേയും സ്വാധീനം.
+</pre>
+
+<h4>3. Theme</h4>
+<ul>
+<li>Power of words</li>
+<li>Language evolution</li>
+</ul>
+
+<h4>4. Model Answers</h4>
+<p><strong>5-mark:</strong> കവിത പദങ്ങളുടെ ശക്തിയെയും പ്രമുഖത്വവുമാണ് അവതരിപ്പിക്കുന്നത്.</p>
+<p><strong>10-mark:</strong> പദങ്ങളുടെ ചരിത്രം, ഭാഷാ ഘടനകൾ, സാമൂഹ്യസംവേദനങ്ങൾ എന്നിവ കുറിച്ച് എഴുതൂ.</p>
+
+<h4>5. Exam Tips</h4>
+<ul>
+<li>Examples of words and their cultural meaning നിർദ്ദേശിക്കുക.</li>
+</ul>
+</section>
+
+<!-- Chapter 4 -->
+<section id="unit2-ch4">
+<h3>Chapter 4: മാപ്പിളപ്പാട്ടിലെ കേരളീയത (Mappilappattile Keraleeyatha)</h3>
+<p class="muted"><strong>Author:</strong> (placeholder)</p>
+
+<h4>1. Summary</h4>
+<p>മാപ്പിളപ്പാട്ടുകളിലൂടെ കേരളീയ संस्कृति, ഭാഷ, റിത്വുകൾ എന്നിവയുടെ പ്രതിഫലനം കാണിക്കുന്നു; ഈ ലേഖനത്തിൽ ആധുനിക വ്യാഖ്യാനവും ചേർക്കാം.</p>
+
+<h4>2. Selected lines</h4>
+<pre>
+1. "താളം പാടി ഉയരും" — സംഗീതം സംസ്കാരത്തെ ഉയർത്തുന്ന ഘടകം.
+2. "വാക്കുകളുടെ മധുരം" — ഭാവനയും ആശയവിനിമയവും.
+</pre>
+
+<h4>3. Theme</h4>
+<ul>
+<li>Cultural identity via folk songs</li>
+<li>Music and community</li>
+</ul>
+
+<h4>4. Model Answers</h4>
+<p><strong>5-mark:</strong> മാപ്പിളപ്പാട്ടുകൾ കേരളീയരുടെ ജീവിതത്തിന്റെ അവിഭാജ്യാംഗങ്ങളാണ്; അവയുടെ സംഗീതവും ഭാഷയും സംസ്‌കാരത്തെ വളര്ത്തുന്നു.</p>
+<p><strong>10-mark:</strong> ഈ താളെടക്കുന്ന പാട്ടുകളുടെ ചരിത്രം, സാമൂഹിക-സാംസ്കാരിക പ്രാധാന്യം, ഭാഷാശൈലി എന്നിവ വിശദീകരിക്കുക.</p>
+
+<h4>5. Exam Tips</h4>
+<ul>
+<li>അവയുടെ പശ്ചാത്തലം കൊടുത്ത ശേഷം ഉദാഹരണ വരികൾ ഉൾക്കൊള്ളിക്കുക.</li>
+</ul>
+</section>
+</section>
+
+<!-- UNIT III -->
+<section id="unit3">
+<h2>Unit III — പ്രതിബിംബം / ദർപ്പണം (Darppanam)</h2>
+<p class="small">Unit III — 2 chapters</p>
+
+<!-- Chapter 1 -->
+<section id="unit3-ch1">
+<h3>Chapter 1: കൊല്ലിവാക്കുകൾ (Kollivakkukal)</h3>
+<p class="muted"><strong>Author:</strong> (placeholder)</p>
+
+<h4>1. Summary</h4>
+<p>കഥാഭാഷയിൽ ഉപയോഗിക്കുന്ന ശക്തമായ വാക്കുകളുടെ പ്രഭവം ഈ പാഠം വിശകലനം ചെയ്യുന്നു; വാക്കുകൾ ചിലപ്പോൾ ജീവിക്കയും നശിപ്പിക്കയും ചെയ്യുമെന്നാണ് ആശയം.</p>
+
+<h4>2. Selected lines</h4>
+<pre>
+1. "വാക്കുകൾ ജഡം തേദുന്നവ" — വാക്കുകൾക്ക് ശക്തി ഉണ്ട്.
+2. "ഒരു ശബ്ദം ഒരു ജീവനെ മാറ്റുന്നു" — ആശയത്തിന്റെ ശക്തി.
+</pre>
+
+<h4>3. Theme</h4>
+<ul>
+<li>Power of language</li>
+<li>Responsibility of speech</li>
+</ul>
+
+<h4>4. Model Answers</h4>
+<p><strong>5-mark:</strong> വാക്കുകളുടെ ശക്തി, അവയുടെ നല്ലതും മുട്ടും എന്നിവയെ കുറിച്ചാണ് പാഠം പറയുന്നത്.</p>
+<p><strong>10-mark:</strong> ഭാഷാശൈലിയിലൂടെയും പരാമര്‍ശങ്ങളിലൂടെയും ഇത്തരം ആശയങ്ങൾ വിശദീകരിക്കുക.</p>
+
+<h4>5. Exam Tips</h4>
+<ul>
+<li>പ്രായോഗിക мысൽ quotes ചേർക്കുക.</li>
+</ul>
+</section>
+
+<!-- Chapter 2 -->
+<section id="unit3-ch2">
+<h3>Chapter 2: അന്വേഷണ നാടകങ്ങൾ (Anveshana Natakangal)</h3>
+<p class="muted"><strong>Author:</strong> (placeholder)</p>
+
+<h4>1. Summary</h4>
+<p>നാടക രൂപത്തിൽ അന്വേഷണാത്മകമായ കഥകൾ — മനുഷ്യനുള്ള അന്വേഷണശേഷി, നാടകരൂപത്തിന്റെ సామർത്ഥ്യം എന്നിവ ഈ പാഠം തെളിയിക്കുന്നു.</p>
+
+<h4>2. Selected lines</h4>
+<pre>
+1. "വേദി തുറക്കുന്നു" — ചോദ്യങ്ങൾ ഉയരുന്നു, നാടകത്തിലെ ദ്വന്ദ്വം ആരംഭിക്കുന്നു.
+2. "പ്രതീക്ഷയുടെ അന്ത്യം" — resolution ആണ് ലക്ഷ്യം.
+</pre>
+
+<h4>3. Theme</h4>
+<ul>
+<li>Inquiry through drama</li>
+<li>Questioning social norms</li>
+</ul>
+
+<h4>4. Model Answers</h4>
+<p><strong>5-mark:</strong> നാടകങ്ങൾ മനുവിന്റെ ചോദ്യങ്ങളെ പ്രതിപാദിക്കുന്നു; പാഠം ഇത് വിശദീകരിക്കുന്നു.</p>
+<p><strong>10-mark:</strong> നാടകത്തിന്റെ ഘടന, conflict-resolution എന്നിവ ഉൾപ്പെടുത്തി വിശദീകരിക്കുക.</p>
+
+<h4>5. Exam Tips</h4>
+<ul>
+<li>play structure (acts/scenes) കുറിച്ച് സൂക്ഷ്മമായി എഴുതുക.</li>
+</ul>
+</section>
+</section>
+
+<!-- UNIT IV -->
+<section id="unit4">
+<h2>Unit IV — നാടകവും ചെറുകഥകളും (Natakavum Cherukathakalum)</h2>
+<p class="small">Unit IV — 2 chapters</p>
+
+<!-- Chapter 1 -->
+<section id="unit4-ch1">
+<h3>Chapter 1: Play / Drama Chapter 1</h3>
+<p class="muted"><strong>Author:</strong> (placeholder)</p>
+
+<h4>1. Summary</h4>
+<p>Chosen play excerpt: social conflicts, character motivations, and stage techniques are discussed. Focus on dialogues and their subtext.</p>
+
+<h4>2. Line-by-line (selected)</h4>
+<pre>
+1. "ആൾ വേദിയിൽ കടന്ന് വന്നപ്പോൾ" — entry creates tension.
+2. "ഡയലോഗ് മാറ്റം" — emphasis on subtext.
+</pre>
+
+<h4>3. Theme</h4>
+<ul>
+<li>Social conflict through drama</li>
+<li>Character motivation</li>
+</ul>
+
+<h4>4. Model Answers</h4>
+<p><strong>5-mark:</strong> play excerpt shows conflict; main characters and their motivations identify ചെയ്യുക.</p>
+<p><strong>10-mark:</strong> plot, characterization, dialogues analysis എന്നിവയും stage directions-ഉം ചേർത്ത് എഴുതുക.</p>
+
+<h4>5. Exam Tips</h4>
+<ul>
+<li>Scene-wise summary + character analysis തയ്യാറാക്കുക.</li>
+</ul>
+</section>
+
+<!-- Chapter 2 -->
+<section id="unit4-ch2">
+<h3>Chapter 2: Short Story Chapter 1</h3>
+<p class="muted"><strong>Author:</strong> (placeholder)</p>
+
+<h4>1. Summary</h4>
+<p>ചെറുകഥയിലെ പ്രധാന സംഭവങ്ങൾ, കഥാപാത്രങ്ങളുടെ മനോഭാവം, ക്രമം എന്നിവ വിശദീകരിക്കുന്നു. Conflict-resolution ആണ് പ്രധാന അധ്യായനം.</p>
+
+<h4>2. Selected lines</h4>
+<pre>
+1. "കഥയുടെ തുടക്കം" — situation setup.
+2. "വിവാദത്തിനുശേഷം" — climax and resolution.
+</pre>
+
+<h4>3. Theme</h4>
+<ul>
+<li>Human relationships</li>
+<li>Societal critique</li>
+</ul>
+
+<h4>4. Model Answers</h4>
+<p><strong>5-mark:</strong> plot summary + main idea.</p>
+<p><strong>10-mark:</strong> characterization, themes, narrative techniques എന്നിവ വിശദീകരിക്കുക.</p>
+
+<h4>5. Exam Tips</h4>
+<ul>
+<li>Story map — beginning, middle, end — എടുക്കുക; important quotes ഉപയോഗിക്കുക.</li>
+</ul>
+</section>
+</section>
+
+<!-- UNIT V -->
+<section id="unit5">
+<h2>Unit V — ഗദ്യവും അപ്ഡേറ്റ് (Gadyavum Update)</h2>
+<p class="small">Unit V — 1 chapter listed here (expandable). For full textbook accuracy, confirm titles from SCERT PDF if needed.</p>
+
+<!-- Chapter 1 -->
+<section id="unit5-ch1">
+<h3>Chapter 1: Essay / Language-use topics</h3>
+<p class="muted"><strong>Author:</strong> (Various / placeholder)</p>
+
+<h4>1. Summary</h4>
+<p>ഗദ്യഭാഗം എന്നത് പ്രബന്ധം, നോവൽ-എസേ എന്നിവയുമായി ബന്ധപ്പെട്ട പ്രായോഗിക എഴുത്ത് കഴിവുകൾ വളർത്താൻ ഉദ്ദേശിച്ചിട്ടുള്ളതാണ്. Official exam writing skills, précis, letter, essay എന്നിവയുടെ ഉദാഹരണം നൽകുന്നു.</p>
+
+<h4>2. Important points</h4>
+<ul>
+<li>Essay writing structure — introduction, body, conclusion</li>
+<li>Letter formats (formal, informal)</li>
+<li>Summary/precis writing techniques</li>
+<li>Language usage: idioms, phrases, contextual grammar</li>
+</ul>
+
+<h4>3. Model Answers</h4>
+<p><strong>5-mark essay:</strong> short 6–8 line answer with clear intro & 2 supporting points + conclusion.</p>
+<p><strong>10-mark essay:</strong> 3 paragraphs (intro, development, conclusion) with examples & linking sentences; include one or two idioms/quotes.</p>
+
+<h4>4. Exam Tips</h4>
+<ul>
+<li>Practice sample essays on common topics (environment, education, social issues).</li>
+<li>Memorize useful sentence starters and linking words.</li>
+<li>Keep one-page notes: format templates for letters/precis/essays for quick revision.</li>
+</ul>
+</section>
+</section>
+{
+"subject": "English",
+"units": [
+{
+"unit_no": 1,
+"unit_name": "Glimpses of Greatness",
+"chapters": [
+{
+"chapter_no": 1,
+"chapter_title": "Three Lessons for Humanity",
+"author": "A.P.J. Abdul Kalam",
+"details": {
+"summary": "Former President of India A.P.J. Abdul Kalam shares three life-changing lessons from his personal and professional journey, focusing on perseverance, humility, and service to society.",
+"important_points": [
+"Value of hard work and honesty",
+"Learning from failures",
+"Service to humanity as the ultimate goal"
+],
+"exam_focus": [
+"Short answer: Key lessons",
+"Paragraph: Author's experiences",
+"Essay: Moral values in the text"
+]
+}
+},
+{
+"chapter_no": 2,
+"chapter_title": "The First Day of School",
+"author": "Mark Twain",
+"details": {
+"summary": "A humorous narrative by Mark Twain describing his childhood memories and the emotions of starting school for the first time.",
+"important_points": [
+"Childhood curiosity and fear",
+"Humor and irony in narration",
+"Cultural background of schooling"
+],
+"exam_focus": [
+"Character sketch",
+"Humor analysis",
+"Theme of innocence"
+]
+}
+},
+{
+"chapter_no": 3,
+"chapter_title": "My Sister's Shoes",
+"author": "Unknown (Folk Narrative)",
+"details": {
+"summary": "A heartwarming story about sibling love, sacrifice, and empathy in a poor family background.",
+"important_points": [
+"Theme of sacrifice",
+"Symbolism of shoes",
+"Emotional tone"
+],
+"exam_focus": [
+"Symbol analysis",
+"Theme explanation",
+"Moral of the story"
+]
+}
+}
+]
+},
+{
+"unit_no": 2,
+"unit_name": "Flights of Fancy",
+"chapters": [
+{
+"chapter_no": 4,
+"chapter_title": "The Flying Lesson",
+"author": "Parable Adaptation",
+"details": {
+"summary": "An allegorical tale encouraging readers to face challenges and believe in their ability to 'fly'.",
+"important_points": [
+"Courage to take risks",
+"Breaking comfort zones",
+"Self-belief"
+],
+"exam_focus": [
+"Moral values",
+"Metaphorical meaning",
+"Character analysis"
+]
+}
+},
+{
+"chapter_no": 5,
+"chapter_title": "The Kite Maker",
+"author": "Ruskin Bond",
+"details": {
+"summary": "A nostalgic story reflecting changes in society through the life of an old kite maker.",
+"important_points": [
+"Tradition vs modernity",
+"Symbolism of kites",
+"Generational gap"
+],
+"exam_focus": [
+"Setting description",
+"Symbolism",
+"Theme explanation"
+]
+}
+},
+{
+"chapter_no": 6,
+"chapter_title": "To the Cuckoo",
+"author": "William Wordsworth",
+"details": {
+"summary": "A romantic poem celebrating the beauty and mystery of the cuckoo bird.",
+"important_points": [
+"Nature imagery",
+"Joy and nostalgia",
+"Romantic ideals"
+],
+"exam_focus": [
+"Poetic devices",
+"Theme of nature",
+"Imagery analysis"
+]
+}
+}
+]
+}
+]
+}
+let englishSyllabus = {
+subject: "English",
+units: [
+{
+unit: "Unit 1 – Flights of Freedom",
+chapters: [
+"Chapter 1 – Three L is to Woman",
+"Chapter 2 – Any Woman",
+"Chapter 3 – Horegallu"
+]
+},
+{
+unit: "Unit 2 – Heights of Harmony",
+chapters: [
+"Chapter 4 – The Mysterious Picture",
+"Chapter 5 – My Grandmother’s House",
+"Chapter 6 – The Price of Flowers"
+]
+},
+{
+unit: "Unit 3 – Human Rights",
+chapters: [
+"Chapter 7 – Going Out for a Walk",
+"Chapter 8 – Refugee Blues",
+"Chapter 9 – I Have a Dream"
+]
+},
+{
+unit: "Unit 4 – Live and Let Live",
+chapters: [
+"Chapter 10 – The Hour of Truth",
+"Chapter 11 – This is Going to Hurt Just a Little Bit",
+"Chapter 12 – The Best Investment I Ever Made"
+]
+},
+{
+unit: "Unit 5 – Bonds of Love",
+chapters: [
+"Chapter 13 – The Castaway",
+"Chapter 14 – To Sleep",
+"Chapter 15 – Matchbox"
+]
+},
+{
+unit: "Unit 6 – Global Issues",
+chapters: [
+"Chapter 16 – Plus Two Question Paper Analysis"
+]
+}
+]
 };
-
-/* ---------------- APP STATE & HELPERS ---------------- */
-const subjectsEl = document.getElementById('subjects');
-const viewer = document.getElementById('viewer');
-const searchInput = document.getElementById('search');
-const planBtn = document.getElementById('plan80');
-
-const SY_KEY = 'h2_edapal_syllabus_kerala_v1';
-let state = JSON.parse(localStorage.getItem(SY_KEY) || '{}');
-
-function slug(s){ return s.toLowerCase().replace(/\s+/g,'-').replace(/[^a-z0-9\-]/g,''); }
-function save(){ localStorage.setItem(SY_KEY, JSON.stringify(state)); }
-
-/* render subject cards */
-function renderSubjects(filter=''){
-  subjectsEl.innerHTML = '';
-  Object.keys(SYLLABUS).forEach(sub=>{
-    const meta = SYLLABUS[sub];
-    if(filter){
-      const text = (sub + JSON.stringify(meta)).toLowerCase();
-      if(!text.includes(filter)) return;
-    }
-    const div = document.createElement('div');
-    div.className = 'subject-card';
-    div.innerHTML = `<div style="font-weight:700">${sub}</div><div class="muted">${meta.year} • ${meta.units.length} units</div>`;
-    div.onclick = ()=> openSubject(sub, div);
-    subjectsEl.appendChild(div);
-  });
-  viewer.innerHTML = `<div id="empty" style="text-align:center;padding:30px"><div style="font-weight:700;font-size:18px">Subject തിരഞ്ഞെടുക്കൂ</div><div class="muted" style="margin-top:6px">Click a subject to view chapters and open detailed notes.</div></div>`;
+{
+"subject": "History",
+"medium": "English",
+"academic_year": "2025-26",
+"units": [
+{
+"unit_no": 1,
+"unit_title": "Early Societies",
+"chapters": [
+{
+"chapter_no": 1,
+"chapter_title": "From the Beginning of Time",
+"details": {
+"focus": "Study of human evolution from the earliest hominids to the emergence of Homo sapiens.",
+"main_points": [
+"Early human species and their migration",
+"Stone Age tools and technology",
+"Hunter-gatherer societies",
+"Use of fire and language development"
+],
+"important_dates_terms": [
+"Paleolithic Age",
+"Mesolithic Age",
+"Neolithic Revolution"
+]
 }
-
-/* open subject: list units & chapters */
-function openSubject(sub, cardEl){
-  document.querySelectorAll('.subject-card').forEach(c=>c.classList.remove('active'));
-  cardEl && cardEl.classList.add('active');
-
-  viewer.innerHTML = '';
-  const header = document.createElement('div');
-  header.innerHTML = `<div style="display:flex;justify-content:space-between;align-items:center"><h2 style="margin:0">${sub}</h2><div class="muted">(${SYLLABUS[sub].year})</div></div><div style="margin-top:8px" class="muted">Units & Chapters</div>`;
-  viewer.appendChild(header);
-
-  SYLLABUS[sub].units.forEach((u,ui)=>{
-    const unitBox = document.createElement('div'); unitBox.style.marginTop='12px';
-    unitBox.innerHTML = `<div style="font-weight:700">${u.name}</div>`;
-    const ul = document.createElement('ul'); ul.className='unit-list';
-    u.chapters.forEach((ch,ci)=>{
-      const li = document.createElement('li');
-      const id = `${slug(sub)}-u${ui}-c${ci}`;
-      const done = state[sub]?.ticks?.[id];
-      li.innerHTML = `<input type="checkbox" ${done?'checked':''} data-id="${id}" style="margin-top:6px"/>
-        <div style="flex:1"><strong style="display:block">${ch.title}</strong><div class="muted" style="font-size:13px">${(ch.details||'').split('\\n')[0]}</div></div>
-        <div style="display:flex;gap:8px"><button class="btn" data-open="${id}">Open</button></div>`;
-      li.querySelector('button').onclick = (e)=>{ e.stopPropagation(); showChapter(sub,ui,ci); };
-      li.querySelector('input[type="checkbox"]').onchange = (ev)=>{
-        state[sub] = state[sub] || {}; state[sub].ticks = state[sub].ticks || {};
-        state[sub].ticks[ev.target.dataset.id] = ev.target.checked;
-        save();
-      };
-      ul.appendChild(li);
-    });
-    unitBox.appendChild(ul);
-    viewer.appendChild(unitBox);
-  });
-
-  // actions
-  const actions = document.createElement('div'); actions.style.marginTop='14px';
-  actions.innerHTML = `<div style="display:flex;gap:8px;flex-wrap:wrap">
-    <button class="btn" id="openFirst">Open first chapter</button>
-    <button class="btn" id="clearProg" style="background:#ef4444">Clear progress</button>
-    </div>`;
-  viewer.appendChild(actions);
-  document.getElementById('openFirst').onclick = ()=> { showChapter(sub,0,0); };
-  document.getElementById('clearProg').onclick = ()=> {
-    if(confirm('Clear saved progress & notes for '+sub+'?')){ delete state[sub]; save(); openSubject(sub, cardEl); }
-  };
+},
+{
+"chapter_no": 2,
+"chapter_title": "Early Cities",
+"details": {
+"focus": "Study of the earliest urban centers like Mesopotamia, Egypt, Indus Valley, and China.",
+"main_points": [
+"Features of early cities",
+"Role of trade and agriculture",
+"Social stratification",
+"Writing systems and record-keeping"
+],
+"important_dates_terms": [
+"Cuneiform",
+"Hieroglyphics",
+"Harappan Civilization"
+]
 }
-
-/* show chapter details (notes, probable qs, memory hook) */
-function showChapter(sub, ui, ci){
-  const ch = SYLLABUS[sub].units[ui].chapters[ci];
-  const container = document.createElement('div'); container.className='chapter';
-  container.innerHTML = `<h3>${ch.title}</h3>
-    <div class="meta">Unit: ${SYLLABUS[sub].units[ui].name} &nbsp; • &nbsp; Subject: ${sub}</div>
-    <div style="margin-top:10px;white-space:pre-line">${ch.details || 'No details available.'}</div>
-    <div style="margin-top:12px"><strong>Probable Questions:</strong><pre style="white-space:pre-line;margin:6px 0">${ch.probable || ''}</pre></div>
-    <div style="margin-top:6px"><strong>Memory Hook:</strong> <span class="pill">${ch.memory || '—'}</span></div>
-    <div style="margin-top:12px">
-      <div style="font-weight:700">Quick Notes (Autosave)</div>
-      <textarea class="note" id="note-area" placeholder="നിനക്ക് ഉപകാരപ്പെടുന്ന қыские notes ഇവിടെ എഴുതൂ…"></textarea>
-      <div style="margin-top:8px;display:flex;gap:8px">
-        <button class="btn" id="markDone">Mark Done</button>
-        <button class="btn" id="shareIt" style="background:#10b981">Share</button>
-      </div>
-    </div>`;
-  // replace viewer (desktop) or insert (mobile)
-  if(window.innerWidth < 880){
-    viewer.insertBefore(container, viewer.firstChild);
-    container.scrollIntoView({behavior:'smooth'});
-  } else {
-    viewer.innerHTML = ''; viewer.appendChild(container);
-  }
-
-  // notes handling
-  state.notes = state.notes || {};
-  const noteKey = `${slug(sub)}-u${ui}-c${ci}-note`;
-  const ta = container.querySelector('#note-area');
-  ta.value = state.notes[noteKey] || '';
-  ta.oninput = (e)=>{ state.notes[noteKey] = e.target.value; save(); };
-
-  container.querySelector('#markDone').onclick = ()=>{
-    state[sub] = state[sub] || {}; state[sub].ticks = state[sub].ticks || {};
-    state[sub].ticks[`${slug(sub)}-u${ui}-c${ci}`] = true; save();
-    alert('Marked done — saved locally.');
-  };
-
-  container.querySelector('#shareIt').onclick = ()=>{
-    const text = `${sub} — ${ch.title}\n\n${ch.details || ''}\n\nProbable:\n${ch.probable || ''}\n\nNotes:\n${state.notes[noteKey] || '(none)'}`;
-    if(navigator.share) navigator.share({title:ch.title, text}); else prompt('Copy to share', text);
-  };
 }
+]
+},
+{
+"unit_no": 2,
+"unit_title": "Empires",
+"chapters": [
+{
+"chapter_no": 3,
+"chapter_title": "An Empire Across Three Continents",
+"details": {
+"focus": "Roman Empire’s expansion across Europe, Asia, and Africa.",
+"main_points": [
+"Formation of the empire",
+"Political structure",
+"Economy and trade",
+"Decline of the Roman Empire"
+],
+"important_dates_terms": [
+"27 BCE – Augustus becomes emperor",
+"476 CE – Fall of Western Roman Empire"
+]
+}
+},
+{
+"chapter_no": 4,
+"chapter_title": "The Central Islamic Lands",
+"details": {
+"focus": "Rise and spread of Islam in the Middle East and beyond.",
+"main_points": [
+"Life of Prophet Muhammad",
+"Expansion under Caliphs",
+"Cultural and scientific achievements"
+],
+"important_dates_terms": [
+"622 CE – Hijra",
+"Abbasid Caliphate"
+]
+}
+}
+]
+},
+{
+"unit_no": 3,
+"unit_title": "Changing Traditions",
+"chapters": [
+{
+"chapter_no": 5,
+"chapter_title": "Changing Cultural Traditions",
+"details": {
+"focus": "European Renaissance, Reformation, and Scientific Revolution.",
+"main_points": [
+"Humanism",
+"Art and architecture",
+"Printing revolution",
+"Religious reforms"
+],
+"important_dates_terms": [
+"1453 – Fall of Constantinople",
+"1517 – Martin Luther's 95 Theses"
+]
+}
+},
+{
+"chapter_no": 6,
+"chapter_title": "Confrontation of Cultures",
+"details": {
+"focus": "Colonial encounters between Europe and the Americas, Africa, and Asia.",
+"main_points": [
+"Age of Exploration",
+"Impact on indigenous populations",
+"Slave trade"
+],
+"important_dates_terms": [
+"1492 – Columbus reaches the Americas"
+]
+}
+}
+]
+},
+{
+"unit_no": 4,
+"unit_title": "Towards Modernity",
+"chapters": [
+{
+"chapter_no": 7,
+"chapter_title": "Industrial Revolution",
+"details": {
+"focus": "Economic and social changes during the Industrial Revolution.",
+"main_points": [
+"Technological innovations",
+"Urbanization",
+"Impact on labour"
+],
+"important_dates_terms": [
+"Steam engine",
+"Cotton industry"
+]
+}
+},
+{
+"chapter_no": 8,
+"chapter_title": "Displacing Indigenous Peoples",
+"details": {
+"focus": "Impact of European colonization on native populations in America, Australia, and Africa.",
+"main_points": [
+"Land dispossession",
+"Cultural destruction",
+"Resistance movements"
+],
+"important_dates_terms": [
+"Trail of Tears",
+"Boer Wars"
+]
+}
+},
+{
+"chapter_no": 9,
+"chapter_title": "Paths to Modernisation",
+"details": {
+"focus": "Modernisation processes in Japan and China.",
+"main_points": [
+"Meiji Restoration",
+"Self-Strengthening Movement",
+"Industrial development"
+],
+"important_dates_terms": [
+"1868 – Meiji Restoration"
+]
+}
+}
+]
+}
+]
+}
+{
+"subject": "Political Science",
+"units": [
+{
+"unit_no": 1,
+"unit_title": "Constitutional Democracy in India",
+"chapters": [
+{
+"chapter_no": 1,
+"chapter_title": "Indian Constitution: The Philosophy and the Basic Features",
+"details": "India’s Constitution, its making, key philosophical foundations, preamble, fundamental rights, directive principles, and basic features doctrine."
+},
+{
+"chapter_no": 2,
+"chapter_title": "Federal System and Centre-State Relations",
+"details": "Nature of Indian federalism, division of powers, inter-state relations, centre-state coordination and conflicts."
+},
+{
+"chapter_no": 3,
+"chapter_title": "Union Executive and Judiciary",
+"details": "President, Prime Minister, Council of Ministers, Supreme Court, Judicial Review, Judicial Activism."
+}
+]
+},
+{
+"unit_no": 2,
+"unit_title": "Political Dynamics",
+"chapters": [
+{
+"chapter_no": 4,
+"chapter_title": "Party System in India",
+"details": "Evolution of party system, major political parties, regional parties, coalition politics."
+},
+{
+"chapter_no": 5,
+"chapter_title": "Elections and Electoral Reforms",
+"details": "Election Commission, electoral process, challenges, recent reforms, model code of conduct."
+},
+{
+"chapter_no": 6,
+"chapter_title": "Social Movements",
+"details": "Peasant movements, Dalit movements, environmental movements, women's movements."
+}
+]
+},
+{
+"unit_no": 3,
+"unit_title": "India and the World",
+"chapters": [
+{
+"chapter_no": 7,
+"chapter_title": "India’s Foreign Policy",
+"details": "Principles, non-alignment, changes after globalization, relations with neighbors."
+},
+{
+"chapter_no": 8,
+"chapter_title": "International Organisations",
+"details": "UN, WTO, IMF, World Bank, BRICS, India’s role in global organizations."
+}
+]
+},
+{
+"unit_no": 4,
+"unit_title": "Political Ideologies",
+"chapters": [
+{
+"chapter_no": 9,
+"chapter_title": "Liberalism, Socialism and Communism",
+"details": "Core principles, historical background, key thinkers, relevance today."
+},
+{
+"chapter_no": 10,
+"chapter_title": "Fascism and Nazism",
+"details": "Rise in Europe, core ideologies, consequences, lessons for democracy."
+}
+]
+},
+{
+"unit_no": 5,
+"unit_title": "Contemporary Issues in Politics",
+"chapters": [
+{
+"chapter_no": 11,
+"chapter_title": "Human Rights and Marginalised Groups",
+"details": "Concept of human rights, constitutional provisions, rights of women, children, SC/ST, minorities."
+},
+{
+"chapter_no": 12,
+"chapter_title": "Globalisation and Its Impact",
+"details": "Political, economic, cultural impacts, resistance movements, sustainable development."
+}
+]
+}
+]
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sociology +2 Syllabus</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+line-height: 1.6;
+margin: 20px;
+background-color: #f9f9f9;
+}
+h1, h2, h3 {
+color: #2c3e50;
+}
+ul {
+list-style-type: none;
+padding-left: 0;
+}
+li {
+margin: 8px 0;
+padding: 8px;
+background-color: #ecf0f1;
+border-radius: 5px;
+}
+.code {
+font-weight: bold;
+color: #e74c3c;
+}
+</style>
+</head>
+<body>
+<h1>+2 Sociology Syllabus</h1>
 
-/* search */
-searchInput.addEventListener('input', (e)=> renderSubjects(e.target.value.trim().toLowerCase()));
+<!-- Unit 1 -->
+<h2>Unit 1: Introducing Sociology (SOC-U1)</h2>
+<ul>
+<li><span class="code">SOC-U1-C1:</span> Sociology and Society – Introduction to Sociology</li>
+<li><span class="code">SOC-U1-C2:</span> Social Institutions</li>
+</ul>
 
-/* 80% plan: pick next undone chapters (1 per subject) */
-planBtn.onclick = ()=>{
-  const picks = [];
-  Object.entries(SYLLABUS).forEach(([sub,meta])=>{
-    for(let u=0; u<meta.units.length; u++){
-      for(let c=0; c<meta.units[u].chapters.length; c++){
-        const id = `${slug(sub)}-u${u}-c${c}`;
-        const done = state[sub]?.ticks?.[id];
-        if(!done){
-          picks.push({sub, unit: meta.units[u].name, title: meta.units[u].chapters[c].title});
-          u = meta.units.length; break;
-        }
-      }
-    }
-  });
-  if(!picks.length) return alert('All chapters marked done — great job!');
-  const msg = picks.slice(0,12).map((p,i)=>`${i+1}. ${p.sub} — ${p.unit} — ${p.title}`).join('\n\n');
-  alert('Next recommended chapters (quick 80% plan):\n\n' + msg);
-};
+<!-- Unit 2 -->
+<h2>Unit 2: Social Structure (SOC-U2)</h2>
+<ul>
+<li><span class="code">SOC-U2-C1:</span> Social Groups</li>
+<li><span class="code">SOC-U2-C2:</span> Social Stratification</li>
+</ul>
 
-/* init */
-renderSubjects();
+<!-- Unit 3 -->
+<h2>Unit 3: Social Processes (SOC-U3)</h2>
+<ul>
+<li><span class="code">SOC-U3-C1:</span> Socialization</li>
+<li><span class="code">SOC-U3-C2:</span> Culture and Society</li>
+<li><span class="code">SOC-U3-C3:</span> Social Change</li>
+</ul>
 
-</script>
+<!-- Unit 4 -->
+<h2>Unit 4: Society and Development (SOC-U4)</h2>
+<ul>
+<li><span class="code">SOC-U4-C1:</span> Economy and Society</li>
+<li><span class="code">SOC-U4-C2:</span> Politics and Society</li>
+<li><span class="code">SOC-U4-C3:</span> Social Problems</li>
+</ul>
+
+<!-- Unit 5 -->
+<h2>Unit 5: Research and Methods (SOC-U5)</h2>
+<ul>
+<li><span class="code">SOC-U5-C1:</span> Sociological Research</li>
+<li><span class="code">SOC-U5-C2:</span> Methods of Research</li>
+<li><span class="code">SOC-U5-C3:</span> Data Analysis and Interpretation</li>
+</ul>
 </body>
 </html>
